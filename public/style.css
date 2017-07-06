@@ -1,0 +1,114 @@
+body, html, div, ul, ol, li, a, h1, h2, h3, h4, input {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: #eee;
+}
+
+#menu ul {
+  display: flex;
+  list-style-type: none;
+  align-self: center;
+}
+
+#menu li {
+  padding: 10px 20px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #2199E8;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2px;
+}
+
+#menu a:hover {
+  border-bottom: 1px solid #2199E8;
+  padding-bottom: 2px;
+  transition: .2s linear;
+}
+
+#search {
+  display: flex;
+}
+
+#search input {
+  outline: none;
+  display: block;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#search button {
+  border: none;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin-left: 10px;
+  background: #2199E8;
+  font-size: 14px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+#search button:hover {
+  background: #777;
+}
+
+.subnav {
+  margin-top: 15px;
+}
+
+#subnav-left {
+  height: 150px;
+  background: #ccc;
+}
+
+#subnav-right {
+  height: 150px;
+  background: #333;
+}
+
+@media screen and (min-width: 414px) {
+  #container {
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  #subnav-wrapper {
+    display: flex;
+  }
+
+  #subnav-left {
+    height: 150px;
+    flex-grow: 1;
+    background: #ccc;
+    margin-right: 7px;
+  }
+
+  #subnav-right {
+    height: 150px;
+    flex-grow: 3;
+    background: #333;
+    margin-left: 7px;
+  }
+
+}
