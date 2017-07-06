@@ -4,6 +4,7 @@ import Nav from './nav';
 import Subnav from './subnav';
 import SecondNav from './second-nav';
 import Preview from './preview';
+import News from './news';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Subnav />
       <SecondNav />
       <Preview />
+      <News />
     </div>
   )
 }
