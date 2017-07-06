@@ -14,8 +14,8 @@ body {
 
 #nav-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 10px;
   background: #eee;
 }
@@ -23,7 +23,6 @@ body {
 #menu ul {
   display: flex;
   list-style-type: none;
-  align-self: center;
 }
 
 #menu li {
@@ -45,6 +44,7 @@ body {
 
 #search {
   display: flex;
+  text-align: center;
 }
 
 #search input {
@@ -87,10 +87,77 @@ body {
   background: #333;
 }
 
-@media screen and (min-width: 414px) {
+#option-menu {
+  height: 50px;
+  width: 100%;
+  background: #eee;
+  margin: 15px auto;
+  box-sizing: border-box;
+  padding: 15px 0;
+}
+
+#option-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#option-menu li {
+  align-self: center;
+}
+
+#option-menu a {
+  text-decoration: none;
+  color: #2199E8;
+}
+
+#option-menu a:hover {
+  color: #777;
+}
+
+#preview-wrapper {
+  display: flex;
+}
+
+#picture-left {
+  height: 300px;
+  background: #ccc;
+  margin-right: 7px;
+  flex-grow: 3;
+}
+
+#picture-right {
+  height: 300px;
+  background: #fff;
+  margin-left: 7px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#top {
+  flex-grow: 1;
+  margin-bottom: 7px;
+  background: #ccc;
+}
+
+#bottom {
+  flex-grow: 1;
+  margin-top: 7px;
+  background: #ccc;
+}
+
+@media screen and (min-width: 580px) {
   #container {
     max-width: 1000px;
     width: 100%;
+  }
+
+  #nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   #subnav-wrapper {
@@ -110,5 +177,7 @@ body {
     background: #333;
     margin-left: 7px;
   }
+
+
 
 }
